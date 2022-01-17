@@ -6,7 +6,8 @@ const app = express();
 app.use('/api', order);
 app.use(cors());
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
     console.log("Server started listening on port :", PORT);
 });
