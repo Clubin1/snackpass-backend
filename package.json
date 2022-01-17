@@ -4,9 +4,9 @@
   "description": "",
   "main": "server",
   "scripts": {
-    "start": "node server.js",
+    "start": "node --max-old-space-size={1536} server.js",
     "dev": "nodemon server.js",
-    "server":"node --max-old-space-size={1536} server/index.js"
+    "server":"node --max-old-space-size={1536} /server.js"
   },
   "author": "Justin Tubay",
   "license": "ISC",
